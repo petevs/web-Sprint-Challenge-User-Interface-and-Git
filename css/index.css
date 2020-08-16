@@ -66,6 +66,23 @@ p {
     line-height: 1.4;
 }
 
+
+/* ----- HEADER ----- */
+
+header {
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-basis: 100%;
+}
+
+
+/* ------ MAIN ----- */
+
 .container {
     width: 800px;
     margin: 0 auto;
