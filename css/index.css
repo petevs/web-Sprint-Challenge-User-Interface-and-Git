@@ -259,10 +259,10 @@ footer nav a {
 /* ---------------------------------------- ABOUT PAGE  ------------------------------------------ */
 
 
-/* Wrapper for full-width text*/
-.top-content .text-container-full {
+/* Wrapper for full-width text on top and bottom sections*/
+.top-content .text-container-full, .bottom-content .text-container-full  {
     width: 100%;
-    padding: 0 1%;
+    padding: 0 3%;
     padding-bottom: 20px;  
 }
 
