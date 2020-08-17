@@ -124,6 +124,10 @@ nav {
     color: inherit;
 }
 
+.menu-item:hover {
+    color: red;
+}
+
 /* Hero Image */
 
 .jumbo-image {
