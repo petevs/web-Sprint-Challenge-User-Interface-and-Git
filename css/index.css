@@ -1,3 +1,5 @@
+/* ---------------------------------------- START OF CSS RESETS  ------------------------------------------ */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -66,30 +68,25 @@ p {
     line-height: 1.4;
 }
 
+/* ---------------------------------------- END OF CSS RESETS  ------------------------------------------ */
 
-/* ----- HEADER ----- */
+/* TABLE OF CONTENTS:
 
-header {
-    padding: 20px 0px;
-    display: flex;
-    flex-direction: column;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-basis: 100%;
-    padding-bottom: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-/* ------ MAIN ----- */
+- Main Styling:
+    - Inner Body Wrapper
+    - Header Section
+        - Nav
+            - Menu
+        - Hero Image
+    - Top Content Section
+    - Middle Content Section
+        - Boxes
+            - Individual Box Styling
+    - Bottom Section
+    - Footer
+- About Page
+    
+/* --- INNER BODY WRAPPER ---*/
 
 .container {
     max-width: 800px;
@@ -97,6 +94,46 @@ nav a {
     padding: 10px;
 }
 
+
+/* --- HEADER SECTION ---*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+/* MENU Section (logo is in separate div) */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-decoration: none;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Hero Image */
+
+.jumbo-image {
+    padding-top: 20px;
+}
+
+
+/* ------ TOP CONTENT SECTION ----- */
+
+/* Wrapper for top content */
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -105,34 +142,35 @@ nav a {
     border-bottom: 1px dashed black;
 }
 
+/* Wrapper for multi-column text (used on homepage) */
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
 }
 
-.top-content .text-container-full {
-    width: 100%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
-}
+/*--- MIDDLE CONTENT SECTION ---*/
 
+/* content wrapper */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
 
+/* Middle content headings */
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
 }
 
+/* middle content box wrapper(homepage)*/
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
+/* box styling (homepage) */
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
@@ -144,19 +182,41 @@ nav a {
     justify-content: center;
 }
 
-#box1{background: teal;}
-#box2{background: gold;}
-#box3{background: cadetblue;}
-#box4{background: coral:}
-#box5{background: crimson;}
-#box6{background: forestgreen;}
-#box7{background: darkorchid;}
-#box8{background: hotpink;}
-#box9{background: indigo;}
-#box10{background:dodgerblue;}
+    /* individual box background stylings (homepage) */
+    #box1{
+        background: teal;
+    }
+    #box2{
+        background: gold;
+    }
+    #box3{
+        background: cadetblue;
+    }
+    #box4{
+        background: coral:
+    }
+    #box5{
+        background: crimson;
+    }
+    #box6{
+        background: forestgreen;
+    }
+    #box7{
+        background: darkorchid;
+    }
+    #box8{
+        background: hotpink;
+    }
+    #box9{
+        background: indigo;
+    }
+    #box10{
+        background:dodgerblue;
+    }
 
+/*--- BOTTOM SECTION ---*/
 
-
+/* content wrapper */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -171,11 +231,13 @@ nav a {
     padding-right: 0;
 }
 
+/* -- FOOTER --- */
 footer {
     width: 100%;
     background: black;
 }
 
+/* Footer Navigation */
 footer nav {
     width: 60%;
     display: flex;
@@ -190,18 +252,31 @@ footer nav a {
     text-decoration: none;
 }
 
-/* ABOUT PAGE */
+/* ---------------------------------------- ABOUT PAGE  ------------------------------------------ */
 
+
+/* Wrapper for full-width text*/
+.top-content .text-container-full {
+    width: 100%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+}
+
+/* Middle Content */
 .middle-content-about {
     margin-bottom: 20px;
 }
 
+/*--- Cards on About Page ---*/
+
+/* Card Wrapper */
 .cards {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -10px;
 }
 
+/* Card */
 .card {
     display: flex;
     flex-direction: column;
@@ -211,15 +286,17 @@ footer nav a {
     border-bottom: 1px dashed black;
 }
 
+/* Card Image */
 .card img {
     width: 100%;
 }
 
+/* Card Heading */
 .card h2 {
     padding-top: 10px;
 }
 
-
+/* Card Button */
 .card-button {
     text-decoration: none;
     color: inherit;
